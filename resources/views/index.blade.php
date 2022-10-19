@@ -150,6 +150,10 @@
      </section>
 
 
+
+
+
+     
      <!-- MENU-->
      <section id="menu" data-stellar-background-ratio="0.5">
           <div class="container">
@@ -328,6 +332,12 @@
      </section>  
 
 
+
+
+
+
+
+     
      <!-- CONTACT -->
      <section id="contact" data-stellar-background-ratio="0.5">
           <div class="container">
