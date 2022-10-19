@@ -69,8 +69,8 @@
                    </div>
 
                    <!-- CONTACT FORM -->
-                   <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
-
+                   <form action="{{route('contact1')}}" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+@csrf
                         <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
                         <h6 class="text-success">Your message has been sent successfully.</h6>
                         
@@ -93,6 +93,9 @@
                              <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
                         </div>
                    </form>
+                   @if (session()->has('status'))
+         {{session('status')}}
+     @endif
               </div>
 
          </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\contactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('/contact',[FrontendController::class,'contact'])->name('contact');
 Route::get('/chef',[FrontendController::class,'chef'])->name('chef');
 Route::get('/menu',[FrontendController::class,'menu'])->name('menu');
 Route::get('/gallery',[FrontendController::class,'gallery'])->name('gallery');
+
+Route::post('/contact',[contactController::class,'contact'])->name('contact1');

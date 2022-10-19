@@ -150,10 +150,6 @@
      </section>
 
 
-
-
-
-     
      <!-- MENU-->
      <section id="menu" data-stellar-background-ratio="0.5">
           <div class="container">
@@ -286,6 +282,10 @@
      </section>
 
 
+
+
+
+
      <!-- TESTIMONIAL -->
      <section id="testimonial" data-stellar-background-ratio="0.5">
           <div class="overlay"></div>
@@ -363,8 +363,8 @@
                          </div>
 
                          <!-- CONTACT FORM -->
-                         <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
-
+                         <form action="{{route('contact1')}}" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+@csrf
                               <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
                               <h6 class="text-success">Your message has been sent successfully.</h6>
                               
